@@ -6,7 +6,3 @@ RUN apk add ruby \
   ruby-dev
 RUN rm -rf /var/cache/apk/*
 RUN gem install puppet-lint --no-document
-
-VOLUME /modules
-ENTRYPOINT ["puppet-lint"]
-CMD ["/modules"]
